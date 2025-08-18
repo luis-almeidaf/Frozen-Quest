@@ -2,14 +2,14 @@ import pygame.image
 from pygame import Rect, Surface
 from pygame.font import Font
 
+from src.consts import COLOR_BLUE, COLOR_YELLOW, MENU_OPTION, WIN_WIDTH
 
-from src.consts import COLOR_BLACK, COLOR_BLUE, COLOR_YELLOW, MENU_OPTION, WIN_WIDTH
 
 class Menu:
 
     def __init__(self, window):
         self.window = window
-        self.surface = pygame.image.load("./assets/BgMenu.png")
+        self.surface = pygame.image.load("./assets/BgMenu.png").convert_alpha()
         self.rect = self.surface.get_rect(left=0, top=0)
 
     def run(self):
@@ -24,17 +24,17 @@ class Menu:
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
                     self.menu_text(
-                        35,
+                        45,
                         MENU_OPTION[i],
                         COLOR_YELLOW,
-                        ((WIN_WIDTH / 2), 160 + 25 * i),
+                        ((WIN_WIDTH / 2), 180 + 25 * i),
                     )
                 else:
                     self.menu_text(
-                        35,
+                        45,
                         MENU_OPTION[i],
-                        COLOR_BLACK,
-                        ((WIN_WIDTH / 2), 160 + 25 * i),
+                        COLOR_BLUE,
+                        ((WIN_WIDTH / 2), 180 + 25 * i),
                     )
             pygame.display.flip()
 

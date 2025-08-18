@@ -1,6 +1,6 @@
 # C
 COLOR_BLACK = (0, 0, 0)
-COLOR_BLUE = (0, 128, 255)
+COLOR_BLUE = (0, 25, 87)
 COLOR_GREY = (160, 160, 160)
 COLOR_ORANGE = (255, 128, 0)
 COLOR_WHITE = (255, 255, 255)
@@ -8,10 +8,10 @@ COLOR_YELLOW = (255, 255, 0)
 
 # E
 ENTITY_SPEED = {
-    "Level1Bg0": 0,
+    "Level1Bg0": 1,
     "Level1Bg1": 1,
-    "Level1Bg2": 2,
-    "Level1Bg3": 3,
+    "Level1Bg2": 1,
+    "Level1Bg3": 2,
 }
 
 # M
